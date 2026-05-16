@@ -1,0 +1,179 @@
+.App {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #23242a;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin: 0;
+  color: #57585f;
+}
+
+.current-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+button.secondary-button {
+  background: #eef1ff;
+  color: #3544ee;
+}
+
+button:not(.secondary-button) {
+  background: #3544ee;
+  color: white;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 18px 60px rgba(34, 35, 47, 0.08);
+  padding: 24px;
+}
+
+.login-card,
+.create-card,
+.list-card {
+  width: 100%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7d8e6;
+  border-radius: 14px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  background: #fcfcff;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #23242a;
+}
+
+.error-message,
+.form-message {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.error-message {
+  background: #ffe3e3;
+  color: #a12424;
+}
+
+.form-message {
+  background: #eef2ff;
+  color: #2f3b85;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.user-list {
+  display: grid;
+  gap: 14px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #ececf5;
+  background: #fafbff;
+}
+
+.user-row strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.user-meta {
+  text-align: right;
+  display: grid;
+  gap: 6px;
+  min-width: 150px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef1ff;
+  color: #3544ee;
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 360px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 20px 16px;
+  }
+  .current-user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
