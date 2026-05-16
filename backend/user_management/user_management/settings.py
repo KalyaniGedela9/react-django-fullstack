@@ -25,10 +25,10 @@ SECRET_KEY = "django-insecure-tt9*w*6!+i7qpdtw4yz76wkv74m_=a-qh9ahye7jk0cs+-fd2=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://ws-hosting-1kggamlpn-kalyanicourses-4609s-projects.vercel.app",
+    "https://react-django-fullstack-jf1d-70fvsdj62.vercel.app"
 ]
 
 
